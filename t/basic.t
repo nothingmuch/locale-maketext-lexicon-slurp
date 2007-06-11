@@ -5,7 +5,9 @@ use warnings;
 
 use Test::More 'no_plan';
 
-use ok 'Locale::Maketext::Lexicon::Slurp';
+BEGIN {
+    use_ok('Locale::Maketext::Lexicon::Slurp');
+}
 
 use Path::Class;
 

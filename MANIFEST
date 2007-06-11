@@ -1,0 +1,17 @@
+Build.PL
+ChangeLog
+Makefile.PL
+META.yml
+MANIFEST
+MANIFEST.SKIP
+README
+lib/Locale/Maketext/Lexicon/Slurp.pm
+t/basic.t
+t/pod.t
+t/pod_coverage.t
+t/files/de/cat
+t/files/de/dog
+t/files/de/hello
+t/files/en/cat
+t/files/en/dog
+t/files/en/hello

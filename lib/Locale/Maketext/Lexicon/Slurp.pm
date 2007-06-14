@@ -1,5 +1,7 @@
 package Locale::Maketext::Lexicon::Slurp;
-use Moose;
+
+use strict;
+use warnings;
 
 use File::Basename ();
 use Path::Class;

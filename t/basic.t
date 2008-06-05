@@ -19,8 +19,8 @@ BEGIN { $t_dir = Path::Class::file( __FILE__ )->parent };
 	use base 'Locale::Maketext';
 
 	use Locale::Maketext::Lexicon {
-        en => [ Slurp => [ $t_dir->subdir("files", "en"), regex => qr{(^|/)(hello|cat)$} ] ],
-        de => [ Slurp => [ $t_dir->subdir("files", "de"), regex => qr{(^|/)(hello|cat)$} ] ],
+        en => [ Slurp => [ $t_dir->subdir("files", "en"), regex => qr{(?:hello|cat)$} ] ],
+        de => [ Slurp => [ $t_dir->subdir("files", "de"), regex => qr{(?:hello|cat)$} ] ],
         es => [ Slurp => [ $t_dir->subdir("files", "de"), files => "*ll*" ] ],
         ru => [ Slurp => [ $t_dir->subdir("files"), files => ::file("de","*ll*") ] ],
         pt => [ Slurp => [ $t_dir->file("files","de","*at") ] ],
